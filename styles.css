@@ -1,0 +1,39 @@
+body{
+    margin: 0;
+    background-color:lemonchiffon;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    align-items: center;
+    margin: auto;
+    height: 100%;
+
+}
+.game-title{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 66px;
+    letter-spacing: -0.004em;
+    color: #75B79E;
+    text-align: center;
+
+}
+.game-container{
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+
+
+}
+.card{
+    height: 146px;
+    width: 117px;
+    background-color: green;
+    margin: 34px;
+}
