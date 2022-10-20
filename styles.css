@@ -32,8 +32,20 @@ body{
 
 }
 .card{
+    display: flex;
     height: 146px;
     width: 117px;
-    background-color: green;
+    background-color: #a7e9af ;
+    border: solid 1px #99cea8;
+    border-radius: 5px;
     margin: 34px;
+    justify-content: space-around;
+    align-items: center;
+}
+img{
+    height: 100px;
+    width: 100px;
+}
+.hidden{
+    display: none;
 }
