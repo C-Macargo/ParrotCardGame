@@ -92,6 +92,6 @@ function CheckCards(){
 }
 
 function EndGame(){
-    alert(`"FIM DE JOGO VOCÊ GANHOU EM ${PlaysCounter} JOGADAS"`)
+    alert(`"fim de jogo você ganhou em ${PlaysCounter} jogadas"`)
 
 }
