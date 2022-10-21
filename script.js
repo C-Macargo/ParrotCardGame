@@ -66,7 +66,8 @@ function CheckCards(){
     const FirstParrot = FirstCard.getAttribute("id")
     const SecondParrot = SecondCard.getAttribute("id")
     if (FirstParrot === SecondParrot){
-        
+        FirstCard.classList.add("matched")
+        SecondCard.classList.add("matched")
         FirstCard = ""
         SecondCard = ""
         EndgameCounter += 2
@@ -92,5 +93,5 @@ function CheckCards(){
 
 function EndGame(){
     alert(`"FIM DE JOGO VOCÊ GANHOU EM ${PlaysCounter} JOGADAS"`)
-4
+
 }
