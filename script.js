@@ -6,13 +6,13 @@ let NumberOfCards
 const ContainerDiv = document.querySelector(".game-container")
 const CardFronts= ['bobrossparrot.gif','explodyparrot.gif','fiestaparrot.gif','metalparrot.gif','unicornparrot.gif','tripletsparrot.gif','revertitparrot.gif']
 let CardList =[]
+let SelectedCards = []
 
 
 function SelectNumberOfCards() {
 
 
     let NumberOfCards = Number(prompt("Com quantas cartas iremos jogar"))
-
 
     if (NumberOfCards < 4 || NumberOfCards > 14  || NumberOfCards % 2 !== 0){
         return SelectNumberOfCards()
@@ -40,7 +40,8 @@ function SummonCards(){
     } 
 }
 
-function FlipCard(){
-
+function FlipCard(card){
+    card.classList.add("clicked")
+    card.classList.add("checked")
 }
 

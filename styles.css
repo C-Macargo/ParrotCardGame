@@ -41,11 +41,34 @@ body{
     margin: 34px;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
+
 }
+.card-front{
+    position: absolute;
+    opacity: 0;
+}
+
+.card-back{
+    position: absolute;
+}
+
 img{
     height: 100px;
     width: 100px;
 }
-.hidden{
-    display: none;
+.clicked{
+    transform: rotateY(180deg);
+    transition: all 1s;
+    transform-style:preserve-3d;
+}
+.clicked > .card-back{
+opacity: 0;
+transition: 500ms;
+}
+
+.clicked > .card-front{
+opacity: 1;
+transition: 500ms;
+
 }
