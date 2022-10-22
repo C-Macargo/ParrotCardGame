@@ -10,7 +10,7 @@ let FirstCard = ""
 let SecondCard = ""
 let EndgameCounter = 0
 let PlaysCounter = 0
-
+timer = 0
 function SelectNumberOfCards() {
 
 
@@ -92,6 +92,22 @@ function CheckCards(){
 }
 
 function EndGame(){
-    alert(`"fim de jogo você ganhou em ${PlaysCounter} jogadas"`)
-
+    alert(`"Parabéns, Você ganhou em ${PlaysCounter} jogadas e em ${timer} segundos"`)
+    clearInterval(add)
+                resposta=Prompt("gostaria de jogar novamente?")
 }
+
+function ClockCounter() {
+    add = setInterval(timeProgression, 1000);
+
+    function timeProgression() {
+    timer++;
+    const div = document.querySelector(".clock");
+    div.innerHTML = timer;
+    if (timer == 0) {
+        clearInterval(add);
+    }
+    }
+}
+
+

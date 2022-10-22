@@ -45,7 +45,6 @@ body{
     cursor: pointer;
     transition: all 1s;
     box-sizing: border-box;
-    transition: border-width 0.6s linear;
     
 
 
@@ -55,18 +54,27 @@ body{
     box-shadow: inset;
 
 
+
 }
 
 .card-front{
     position: absolute;
     opacity: 0;
-    transition: all 1s;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    -o-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    transition-delay: 100ms
 
 }
 
 .card-back{
     position: absolute;
-    transition: all 1s;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    -o-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    transition-delay: 100ms
 
 }
 
@@ -77,23 +85,31 @@ img{
 .fliped{
     transform: rotateY(180deg);
     transition: all 1s;
-    transform-style:preserve-3d;
 }
 
 .fliped > .card-back{
     opacity: 0;
-    transition: 500ms;
     }
     
     .fliped > .card-front{
     opacity: 1;
-    transition: 500ms;
 }
 
 .matched{
 
         pointer-events: none;
     
+}
+.clock-container{
+    padding: 15px;
+    background-color: lightgreen;
+    border-radius: 5px;
+    position: fixed;
+    right: 15px;
+    top : 15px
+}
+.clock{
+    font-size: 100px;
 }
 
 
@@ -103,5 +119,16 @@ img{
         flex-wrap: wrap;
         flex-direction: column;  
         margin: auto;    
-}
     }
+    .clock-container{
+            padding: 5px;
+            background-color: lightgreen;
+            border-radius: 5px;
+            position: fixed;
+            right: 0px;
+            top : 15px
+    }
+    .clock{
+        font-size: 35px;
+    }       
+}
