@@ -94,8 +94,15 @@ function CheckCards(){
 function EndGame(){
     alert(`"Parabéns, Você ganhou em ${PlaysCounter} jogadas e em ${timer} segundos"`)
     clearInterval(add)
-                resposta=Prompt("gostaria de jogar novamente?")
-}
+                
+                    pergunta = (prompt("gostaria de jogar novamente?"))
+                        if (pergunta == "sim"){
+                            location.reload()
+                        }
+                        else{
+                            
+                        }
+}   
 
 function ClockCounter() {
     add = setInterval(timeProgression, 1000);

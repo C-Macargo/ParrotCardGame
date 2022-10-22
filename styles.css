@@ -43,7 +43,7 @@ body{
     justify-content: space-around;
     align-items: center;
     cursor: pointer;
-    transition: all 1s;
+    transition: all 1s ease-in;
     box-sizing: border-box;
     
 
