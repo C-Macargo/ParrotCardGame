@@ -13,7 +13,6 @@ let PlaysCounter = 0
 timer = 0
 function SelectNumberOfCards() {
 
-
     NumberOfCards = Number(prompt("Com quantas cartas iremos jogar"))
     CardFronts.sort(comparador)
 
@@ -30,7 +29,6 @@ function SelectNumberOfCards() {
     }
     SummonCards()
 }
-
 
 function SummonCards(){
     CardList.sort(comparador)
@@ -59,7 +57,6 @@ function FlipCard(card){
             PlaysCounter += 1
             CheckCards()
         }
-        
 }
 
 function CheckCards(){

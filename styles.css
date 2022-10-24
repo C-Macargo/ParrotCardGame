@@ -2,6 +2,7 @@ body{
     margin: 0;
     background-color:lemonchiffon;
 }
+
 .content{
     display: flex;
     flex-direction: column;
@@ -9,8 +10,8 @@ body{
     align-items: center;
     margin: auto;
     height: 100%;
-
 }
+
 .game-title{
     font-family: 'Roboto';
     font-style: normal;
@@ -20,18 +21,15 @@ body{
     letter-spacing: -0.004em;
     color: #75B79E;
     text-align: center;
-
 }
+
 .game-container{
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-
-
-
-
 }
+
 .card{
     display: flex;
     height: 146px;
@@ -45,16 +43,11 @@ body{
     cursor: pointer;
     transition: all 1s ease-in;
     box-sizing: border-box;
-    
-
-
 }
+
 .card:hover{
     border: solid 5px green;
     box-shadow: inset;
-
-
-
 }
 
 .card-front{
@@ -65,7 +58,6 @@ body{
     -o-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     transition-delay: 100ms
-
 }
 
 .card-back{
@@ -75,13 +67,13 @@ body{
     -o-transition: opacity 400ms ease-in;
     transition: opacity 400ms ease-in;
     transition-delay: 100ms
-
 }
 
 img{
     height: 100px;
     width: 100px;
 }
+
 .fliped{
     transform: rotateY(180deg);
     transition: all 1s;
@@ -96,10 +88,10 @@ img{
 }
 
 .matched{
-
         pointer-events: none;
     
 }
+
 .clock-container{
     padding: 15px;
     background-color: lightgreen;
@@ -108,10 +100,10 @@ img{
     right: 15px;
     top : 15px
 }
+
 .clock{
     font-size: 100px;
 }
-
 
 @media all and (max-width: 650px) {
     .game-container{
